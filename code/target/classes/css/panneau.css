@@ -1,0 +1,33 @@
+
+.list-view .list-cell:even {
+-fx-background-color: white;
+-fx-text-fill: black;
+}
+
+.list-view .list-cell:odd {
+-fx-background-color: white;
+-fx-text-fill: black;
+}
+
+.table-row-cell {
+    -fx-cell-size: 50px;
+}
+
+.noheader .column-header-background {
+    -fx-max-height: 0;
+    -fx-pref-height: 0;
+    -fx-min-height: 0;
+}
+
+.table-row-cell:filled:selected { 
+  -fx-background: -fx-control-inner-background ;
+  -fx-background-color: -fx-table-cell-border-color, -fx-background ;
+  -fx-background-insets: 0, 0 0 1 0 ;
+  -fx-table-cell-border-color: transparent;
+}
+.table-row-cell:odd:filled:selected {
+  -fx-background: -fx-control-inner-background-alt ;
+}
+.table-view {
+  -fx-table-cell-border-color: transparent;
+}

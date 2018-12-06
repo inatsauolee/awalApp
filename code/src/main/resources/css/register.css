@@ -1,0 +1,53 @@
+
+.text-field {
+    -fx-background-color: -fx-text-box-border, -fx-background ;
+    -fx-background-insets: 0, 0 0 1 0 ;
+    -fx-background-radius: 0 ;
+    -fx-font-family: "Quicksand";
+   	-fx-font-size: 15;
+    -fx-min-height: 26;
+    -fx-min-width: 300;
+}
+
+.text-field:focused {
+    -fx-background-color: -fx-focus-color, -fx-background ;
+}
+
+.logo1{
+	-fx-background-image: url("../images/logo-register.png");
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+}
+
+.login { 
+    -fx-graphic: url("../images/login-button-on.png");
+    -fx-background-color: transparent;
+}
+
+.login:hover { 
+  -fx-graphic: url("../images/login-button-off.png");
+}
+
+.register { 
+    -fx-graphic: url("../images/register-button-on.png");
+    -fx-background-color: transparent;
+}
+
+.register:hover { 
+  -fx-graphic: url("../images/register-button-off.png");
+}
+
+.picture { 
+    -fx-graphic: url("../images/picture-button-on.png");
+    -fx-background-color: transparent;
+}
+
+.picture:hover { 
+  -fx-graphic: url("../images/picture-button-off.png");
+}
+
+#errorLabel{
+	-fx-text-fill: orange;
+	-fx-font-family: "Quicksand";
+   	-fx-font-size: 15;
+}

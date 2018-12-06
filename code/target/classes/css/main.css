@@ -1,0 +1,152 @@
+
+.text-field {
+    -fx-background-color: -fx-text-box-border, -fx-background ;
+    -fx-background-insets: 0, 0 0 1 0 ;
+    -fx-background-radius: 0 ;
+    -fx-font-family: "Quicksand";
+   	-fx-font-size: 15;
+    -fx-min-height: 26;
+    -fx-min-width: 300;
+}
+
+.text-field:focused {
+    -fx-background-color: -fx-focus-color, -fx-background ;
+}
+
+#profilGridPane{
+    -fx-padding: -20 0 5 10;
+}
+
+#outilsGridPane{
+    -fx-padding: -40 0 86 30;
+}
+
+.picLab{
+    -fx-padding: 0 0 0 50;
+}
+
+.nameLab{
+    -fx-padding: 2 0 0 0;
+    -fx-min-width: 230;
+    -fx-font-family: "Quicksand";
+    -fx-text-alignment: center;
+	-fx-font-size: 19px;
+    -fx-text-fill: #ffffff;
+}
+
+.usernameLab{
+    -fx-padding: 2 0 20 0;
+    -fx-min-width: 230;
+    -fx-font-family: "Quicksand";
+    -fx-text-alignment: center;
+	-fx-font-size: 13px;
+    -fx-text-fill: #aaaaaa;
+}
+
+.l {
+	-fx-font-family: "Quicksand";
+    -fx-text-alignment: center;
+    -fx-padding: 2 2 2 50;
+	-fx-font-size: 14px;
+    -fx-text-fill: #aaaaaa;
+}
+
+.usernameLab:hover, .l:hover{
+    -fx-text-fill: #ffffff;
+}
+
+
+.groupLab, .contactLab{
+    -fx-font-family: "Quicksand";
+    -fx-text-alignment: left;
+	-fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #c6ffec;
+}
+
+.contactLab{
+    -fx-padding: 30 0 0 20;
+}
+
+.groupLab{
+    -fx-padding: 5 0 0 20;
+}
+
+.logo{
+	-fx-background-image: url("../images/logo-login.png");
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+}
+
+.messages { 
+    -fx-graphic: url("../images/messages-button-off.png");
+    -fx-min-height: 32;
+    -fx-min-width: 38;
+    -fx-background-color: transparent;
+}
+
+.messages:hover { 
+  -fx-graphic: url("../images/messages-button-on.png");
+}
+
+.parametres { 
+    -fx-graphic: url("../images/parametres-button-off.png");
+    -fx-min-height: 32;
+    -fx-min-width: 38;
+    -fx-background-color: transparent;
+}
+
+.parametres:hover { 
+  -fx-graphic: url("../images/parametres-button-on.png");
+}
+
+.statistics { 
+    -fx-graphic: url("../images/statistics-button-off.png");
+    -fx-min-height: 32;
+    -fx-min-width: 38;
+    -fx-background-color: transparent;
+}
+
+.statistics:hover { 
+  -fx-graphic: url("../images/statistics-button-on.png");
+}
+
+.logout { 
+    -fx-graphic: url("../images/logout-button-off.png");
+    -fx-min-height: 32;
+    -fx-min-width: 38;
+    -fx-background-color: transparent;
+}
+
+.logout:hover { 
+  -fx-graphic: url("../images/logout-button-on.png");
+}
+
+.about { 
+    -fx-graphic: url("../images/about-button-off.png");
+    -fx-min-height: 32;
+    -fx-min-width: 38;
+    -fx-background-color: transparent;
+}
+
+.about:hover { 
+  -fx-graphic: url("../images/about-button-on.png");
+}
+
+.cyrcle { 
+    -fx-graphic: url("../images/cyrcle-button-off.png");
+    -fx-min-height: 32;
+    -fx-min-width: 38;
+    -fx-background-color: transparent;
+}
+
+.cyrcle:hover { 
+  -fx-graphic: url("../images/cyrcle-button-on.png");
+}
+
+
+#errorLabel{
+	-fx-text-fill: orange;
+	-fx-font-family: "Quicksand";
+   	-fx-font-size: 15;
+}

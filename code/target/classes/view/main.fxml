@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import ui.*?>
+<?import dao.*?>
+<?import controllers.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.GridPane?>
+
+<BorderPane prefHeight="700" prefWidth="1000.0" fx:id="general"
+	style="-fx-background-color: #f7f7f7;" xmlns="http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController"
+	stylesheets="@../css/main.css">
+	<center>
+		<ConversationPane fx:id="panneau" BorderPane.alignment="CENTER" />
+	</center>
+	<left>
+		<GridPane alignment="CENTER" hgap="1.0" prefWidth="230"
+			fx:id="leftPanel" style="-fx-background-color: #555555;"
+			BorderPane.alignment="CENTER">
+
+			<effect>
+				<DropShadow />
+			</effect>
+			<children>
+				<GridPane fx:id="outilsGridPane" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="4">
+					<Button mnemonicParsing="false" onAction="#logout"
+						styleClass="logout" GridPane.columnIndex="0"
+						GridPane.rowIndex="0" GridPane.columnSpan="1"></Button>
+					<Button mnemonicParsing="false" onAction="#about"
+						styleClass="about" GridPane.columnIndex="1" GridPane.rowIndex="0"></Button>
+					<Button mnemonicParsing="false" onAction="#profil"
+						styleClass="cyrcle" GridPane.columnIndex="2" GridPane.rowIndex="0"></Button>
+					<Button mnemonicParsing="false" onAction="#createGroupe"
+						styleClass="statistics" GridPane.columnIndex="3"
+						GridPane.rowIndex="0"></Button>
+				</GridPane>
+				<GridPane fx:id="profilGridPane" GridPane.columnIndex="0" GridPane.rowIndex="1"></GridPane>
+				<GridPane fx:id="buttonsGridPane" GridPane.columnIndex="0" GridPane.rowIndex="2">
+					<Button mnemonicParsing="false" onAction="#parametres"
+						styleClass="parametres" GridPane.columnIndex="0"
+						GridPane.rowIndex="0" GridPane.columnSpan="1"></Button>
+					<Button mnemonicParsing="false" onAction="#messages"
+						styleClass="messages" GridPane.columnIndex="1" GridPane.rowIndex="0"></Button>
+					<Button mnemonicParsing="false" onAction="#profil"
+						styleClass="cyrcle" GridPane.columnIndex="2" GridPane.rowIndex="0"></Button>
+					<Button mnemonicParsing="false" onAction="#createGroupe"
+						styleClass="statistics" GridPane.columnIndex="3"
+						GridPane.rowIndex="0"></Button>
+				</GridPane>
+				<GridPane fx:id="contactGridPane" GridPane.columnIndex="0" GridPane.rowIndex="3"></GridPane>
+				<GridPane fx:id="groupGridPane" GridPane.columnIndex="0" GridPane.rowIndex="4"></GridPane>
+			</children>
+		</GridPane>
+	</left>
+
+</BorderPane>
